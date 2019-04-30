@@ -107,14 +107,15 @@ steps:
      !**\obj\**
      !**\sl5\**
 
-    runOnlyImpactedTests: false
-    runInParallel: true
+    #runOnlyImpactedTests: false
+    #runInParallel: true
     codeCoverageEnabled: true
     platform: '$(BuildPlatform)'
     configuration: '$(BuildConfiguration)'
-    rerunFailedTests: true
-    rerunFailedThreshold: 40    
+    #rerunFailedTests: true
+    #rerunFailedThreshold: 40    
     diagnosticsEnabled: false
+  continueOnError: true
   timeoutInMinutes: 40
 
 - task: SonarCloudAnalyze@1
