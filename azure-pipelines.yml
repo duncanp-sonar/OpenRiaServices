@@ -61,10 +61,10 @@ steps:
 - task: SonarSource.sonarcloud.14d9cde6-c1da-4d55-aa01-2965cd301255.SonarCloudPrepare@1
   displayName: 'Prepare analysis on SonarCloud'
   inputs:
-    SonarCloud: 'sonarcloud.io'
-    organization: openriaservices
-    projectKey: 'OpenRIAServices_OpenRiaServices'
-    projectName: OpenRiaServices
+    SonarCloud: 'SC - duncanp-sonar'
+    organization: duncanp-sonar-test
+    projectKey: 'duncanp-sonar-test_coverageTests' # OpenRIAServices_OpenRiaService'
+    projectName: duncanp_coverageTests
     projectVersion: '$(GitVersion.NuGetVersion)'
     extraProperties: |
      # Additional properties that will be passed to the scanner, 
