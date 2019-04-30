@@ -11,6 +11,7 @@ variables:
   BuildConfiguration: 'release'
   BuildPlatform: 'any cpu'
   Solution: 'RiaServices.sln'
+  system.debug: true
 
 steps:
 
